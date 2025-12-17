@@ -11,7 +11,7 @@ const App = () => {
       {/* Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<NoPage />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
     </div>
