@@ -34,11 +34,16 @@ const Home = () => {
 
 
 
-function extractCode(response){
-  // remove content inside backticks using regex.
-  const match = response.match(/```(?:\w+)?\n?([\s\S]*?)```/);
-  return match ? match[1].trim() : response.trim();
+// function extractCode(response){
+//   // remove content inside backticks using regex.
+//   const match = response.match(/```(?:\w+)?\n?([\s\S]*?)```/);
+//   return match ? match[1].trim() : response.trim();
+// }
+  function extractCode(responseText) {
+  const match = responseText.match(/``````/);
+  return match ? match[1].trim() : responseText.trim();
 }
+
 
 
 
