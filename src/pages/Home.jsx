@@ -38,10 +38,11 @@ const Home = () => {
 
   // WARNING: for demo only; this exposes the key in frontend
   const ai = new GoogleGenAI({
-    apiKey: "AIzaSyDG8CrIh7ZH_uxd4Hq8pZ27kC_qIljQgfg",
+    apiKey: "AIzaSyAjFBwG2yP_haqa_X7eivSldu28Eitw8N4",
   });
 
-  const buildPrompt = (promptText, frameworkOption) => `
+  function buildPrompt(promptText, frameworkOption) {
+    return `
 You are an experienced programmer with expertise in web development and UI/UX design.You create modern, animated, and fully responsive UI components.You are highly skilled in HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, React, Next.js, Vue.js, Angular and more.
 
 Now, generate a UI component for: ${promptText}
@@ -56,6 +57,7 @@ Return ONLY the code, formatted properly in Markdown fenced code blocks.
 Do NOT include explanations, text, comments, or anything else besides the code.
 Give the whole code in a single HTML file.
 `.trim();
+  }
 
   async function getResponse() {
     if (!prompt.trim()) {
