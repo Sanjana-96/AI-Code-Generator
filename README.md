@@ -13,6 +13,7 @@ Responsive UI: Tailwind CSS, React Icons, loading states, and error handling for
 
 Deployed Live: Hosted on Vercel with SPA routing for seamless navigation.​
 
+
 🛠 Tech Stack
 Frontend	Tools & Libraries	Deployment
 React 18 + Vite	@google/generative-ai, Monaco Editor, React Select, React Router, Tailwind CSS	Vercel (with vercel.json rewrites)
@@ -28,7 +29,6 @@ npm install
 npm run dev
 
 Open http://localhost:5173. Get a free key at ai.google.dev.
-
 
 
 Challenges Faced
