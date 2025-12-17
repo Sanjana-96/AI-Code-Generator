@@ -1,32 +1,40 @@
 # AI-Code-Generator
-📌 Project Overview
 
-This repository contains a placement-winning project built to demonstrate practical skills, real-world problem solving, and technical depth — the type of project that helps students and professionals stand out to recruiters and secure job placements. It covers everything from design and implementation to deployment and testing, making it a complete showcase of my technical abilities.
+AI-Code-Generator is a modern React web app that transforms natural language prompts into executable code snippets using Google's Gemini AI API. Built for developers, it features an intuitive UI with Monaco Editor for code preview, framework/language selection via React Select, and one-click copy/export options.​​
 
-📂 Features
+🚀 Features
+AI-Powered Code Generation: Enter prompts like "Write a Python fizzbuzz function" – get instant, syntax-highlighted code via Gemini 1.5 Flash.
 
-Real-World Use Case: Solves a practical problem or builds a meaningful tool/product that aligns with industry needs.
+Rich Editor: Full Monaco Editor (VS Code's engine) for editing/previewing generated code.
 
-Clean Architecture: Modular code structure following best practices for scalability and maintainability.
+Framework Support: Select from JavaScript, Python, Java, C++, and more via dropdown.
 
-Complete Documentation: Includes setup instructions, code overview, and usage examples so anyone can run and understand the project.
+Responsive UI: Tailwind CSS, React Icons, loading states, and error handling for smooth UX.
 
-Tech Stack: Built using [list your languages/frameworks here — e.g., JavaScript, Python, React, Node.js, Flask, Django, etc.].
+Deployed Live: Hosted on Vercel with SPA routing for seamless navigation.​
 
-Deployment Ready: Live demo or deployment guide included.
+🛠 Tech Stack
+Frontend	Tools & Libraries	Deployment
+React 18 + Vite	@google/generative-ai, Monaco Editor, React Select, React Router, Tailwind CSS	Vercel (with vercel.json rewrites)
 
-Test Coverage: Unit/integration tests to ensure reliability and quality.
 
-🚀 Why This Project Matters
 
-This project isn’t just a homework assignment — it’s a portfolio piece designed to demonstrate:
-✔ Problem identification and solution design
-✔ End-to-end development skills
-✔ Use of modern tools and technologies
-✔ Code quality and collaboration (e.g., branching, commits, PR workflow)
-✔ Deployability and real-world readiness
+📦 Setup & Run Locally
 
-It’s the kind of project that gets interviewers’ attention and helps you land placements or internships by showing that you can deliver a complete, polished software solution — not just isolated scripts or small features. 
-YouTube
+git clone https://github.com/Sanjana-96/AI-Code-Generator.git
+cd AI-Code-Generator
+npm install
+# Add your Gemini API key to .env: VITE_GEMINI_API_KEY=your_key_here
+npm run dev
 
-📌 Getting Started
+Open http://localhost:5173. Get a free key at ai.google.dev.
+
+
+
+Challenges Faced
+Deployment on Vercel involved repeated build failures, including "vite: command not found" (exit code 127), ENOENT errors for package.json due to incorrect Root Directory settings, and 404s on page refresh fixed by adding vercel.json rewrites. API integration hit Gemini quota limits (429 RESOURCE_EXHAUSTED after 20 daily requests on free tier) and transient 503 overload errors, resolved via retries and quota monitoring. Git merge conflicts from API key updates in .env and Home.jsx required manual resolution of markers like <<<<<<< HEAD.
+
+Future Enhancements
+Backend proxy (Node/Express) for API key hiding.
+
+Multi-model support, user auth, code execution sandbox, and project saving.[user-information]
