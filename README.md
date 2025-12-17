@@ -18,7 +18,8 @@ Deployed Live: Hosted on Vercel with SPA routing for seamless navigation.​
 Frontend	Tools & Libraries	Deployment
 React 18 + Vite	@google/generative-ai, Monaco Editor, React Select, React Router, Tailwind CSS	Vercel (with vercel.json rewrites)
 
-
+# Quick Demo
+https://github.com/user-attachments/assets/f483b84f-5001-48a6-8fc0-3276869e065d
 
 📦 Setup & Run Locally
 
