@@ -335,7 +335,7 @@ const Home = () => {
 
   // WARNING: for demo only; this exposes the key in frontend
   const ai = new GoogleGenAI({
-    apiKey: "YOUR_REAL_GEMINI_KEY_HERE",
+    apiKey: AIzaSyDG8CrIh7ZH_uxd4Hq8pZ27kC_qIljQgfg,
   });
 
   const buildPrompt = (promptText, frameworkOption) => `
